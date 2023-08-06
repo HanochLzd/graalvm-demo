@@ -7,8 +7,8 @@ graalvm-demo
 ## mac
 ```bash
 gcc -shared -Wall -Werror \
--I$JAVA_HOM/include \
--I$JAVA_HOM/include/darwin \
+-I$JAVA_HOME/include \
+-I$JAVA_HOME/include/darwin \
 -dynamiclib \
 -o libHelloWorld.dylib  \
 -fPIC ./HelloWorld.c
@@ -17,8 +17,8 @@ gcc -shared -Wall -Werror \
 ## linux
 
 ```bash
-gcc -shared -Wall -Werror -I$JAVA_HOM/include \
--I$JAVA_HOM/include/linux -o libHelloWorld.so  \
+gcc -shared -Wall -Werror -I$JAVA_HOME/include \
+-I$JAVA_HOME/include/linux -o libHelloWorld.so  \
 -fPIC ./HelloWorld.c
 ```
 
