@@ -61,6 +61,7 @@
                     </metadataRepository>
                     <buildArgs>
                         <buildArg>--enable-monitoring=jvmstat</buildArg>
+<!--                        <buildArg>&#45;&#45;gc=g1</buildArg>-->
                     </buildArgs>
                 </configuration>
                 <executions>
