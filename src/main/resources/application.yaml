@@ -1,0 +1,30 @@
+management:
+  endpoints:
+    web:
+      path-mapping:
+        prometheus: metrics
+        # ??diamond??prometheus????????/metrics?
+        # ???/metrics??????json,???/metrics?/prometheus?????
+        metrics: prometheus
+      # ???????/actuator
+      base-path: /
+      exposure:
+        include: "*"
+    servlet:
+      context-path: /
+    ssl:
+      enabled: false
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+    info.enabled: true
+    metrics:
+      enabled: true
+  info:
+    git:
+      mode: full
+
+spring:
+  jmx:
+    enabled: false
