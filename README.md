@@ -1,8 +1,13 @@
 # graalvm-demo
 graalvm-demo
 
+# build jni .h
+```shell
+cd src/main/java
+javac --class-path ../../../target/classes -h ../resources/native com/hanoch/graalvmdemo/jni/HelloWorld.java
+```
 
-# gcc
+# gcc build so
 
 ## mac
 ```bash
