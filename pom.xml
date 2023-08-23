@@ -76,7 +76,7 @@
                     </metadataRepository>
                     <buildArgs>
                         <buildArg>--enable-monitoring=jvmstat</buildArg>
-                        <buildArg>--gc=g1</buildArg>
+                        <buildArg>-H:ConfigurationFileDirectories=./config-dir</buildArg>
                     </buildArgs>
                 </configuration>
                 <executions>

@@ -15,6 +15,22 @@ extern "C" {
 JNIEXPORT void JNICALL Java_com_hanoch_graalvmdemo_jni_HelloWorld_print
   (JNIEnv *, jobject);
 
+/*
+ * Class:     com_hanoch_graalvmdemo_jni_HelloWorld
+ * Method:    add
+ * Signature: (II)I
+ */
+JNIEXPORT jint JNICALL Java_com_hanoch_graalvmdemo_jni_HelloWorld_add
+  (JNIEnv *, jobject, jint, jint);
+
+/*
+ * Class:     com_hanoch_graalvmdemo_jni_HelloWorld
+ * Method:    printAb
+ * Signature: (II)V
+ */
+JNIEXPORT void JNICALL Java_com_hanoch_graalvmdemo_jni_HelloWorld_printAb
+  (JNIEnv *, jobject, jint, jint);
+
 #ifdef __cplusplus
 }
 #endif

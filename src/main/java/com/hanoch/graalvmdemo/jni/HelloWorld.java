@@ -11,4 +11,8 @@ public class HelloWorld {
     }
 
     public native void print();
+
+    public native int add(int a, int b);
+
+    public native void printAb(int a, int b);
 }

@@ -11,6 +11,8 @@ javac --class-path ../../../target/classes -h ../resources/native com/hanoch/gra
 
 ## mac
 ```bash
+cd src/main/resources/native
+
 gcc -shared -Wall -Werror \
 -I$JAVA_HOME/include \
 -I$JAVA_HOME/include/darwin \
